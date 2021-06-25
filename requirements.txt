@@ -1,2 +1,0 @@
-pytest
-allure-pytest==2.8.40
