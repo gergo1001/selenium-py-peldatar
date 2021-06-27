@@ -9,12 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c060ae6a30ce9b7e",
-      "reportUrl" : "https://gergo1001.github.io/selenium-py-peldatar/10//#testresult/c060ae6a30ce9b7e",
+      "uid" : "cfb59e576db74d3a",
+      "reportUrl" : "https://gergo1001.github.io/selenium-py-peldatar/11//#testresult/cfb59e576db74d3a",
       "status" : "passed",
       "time" : {
-        "start" : 1624788435178,
-        "stop" : 1624788435178,
+        "start" : 1624788449332,
+        "stop" : 1624788449332,
         "duration" : 0
       }
     } ]
@@ -29,12 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "71bef60e2d2a2b54",
-      "reportUrl" : "https://gergo1001.github.io/selenium-py-peldatar/10//#testresult/71bef60e2d2a2b54",
+      "uid" : "62c5e366dd9370ba",
+      "reportUrl" : "https://gergo1001.github.io/selenium-py-peldatar/11//#testresult/62c5e366dd9370ba",
       "status" : "passed",
       "time" : {
-        "start" : 1624788435177,
-        "stop" : 1624788435177,
+        "start" : 1624788449330,
+        "stop" : 1624788449330,
         "duration" : 0
       }
     } ]
@@ -49,12 +49,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2b1a5e1b76116df9",
-      "reportUrl" : "https://gergo1001.github.io/selenium-py-peldatar/10//#testresult/2b1a5e1b76116df9",
+      "uid" : "727d2163d7db45c0",
+      "reportUrl" : "https://gergo1001.github.io/selenium-py-peldatar/11//#testresult/727d2163d7db45c0",
       "status" : "passed",
       "time" : {
-        "start" : 1624788435176,
-        "stop" : 1624788435176,
+        "start" : 1624788449329,
+        "stop" : 1624788449329,
         "duration" : 0
       }
     } ]
@@ -69,13 +69,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "465dab5e47593488",
-      "reportUrl" : "https://gergo1001.github.io/selenium-py-peldatar/10//#testresult/465dab5e47593488",
+      "uid" : "f5d741de186d6fde",
+      "reportUrl" : "https://gergo1001.github.io/selenium-py-peldatar/11//#testresult/f5d741de186d6fde",
       "status" : "passed",
       "time" : {
-        "start" : 1624788435174,
-        "stop" : 1624788435174,
-        "duration" : 0
+        "start" : 1624788449326,
+        "stop" : 1624788449327,
+        "duration" : 1
       }
     } ]
   }
