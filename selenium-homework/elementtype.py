@@ -4,6 +4,8 @@ driver = webdriver.Chrome()
 driver.get("http://localhost:9999/trickyelements.html")
 
 elemek = driver.find_elements_by_xpath(".//*")
+#miután már megcsináltam ezt a feladatot olvastam az XPATH wordbe, hogy ne használjunk * karaktert, de miért ne? most már ezt a feladatot itt hagyom,
+#de egy konzultáción majd megkérdezem
 
 for elem in elemek:
     # print (elem.get_attribute("type"))
