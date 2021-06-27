@@ -9,12 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "eeb417902628b5c2",
-      "reportUrl" : "https://gergo1001.github.io/selenium-py-peldatar/20//#testresult/eeb417902628b5c2",
+      "uid" : "a2d237e0fe2df71d",
+      "reportUrl" : "https://gergo1001.github.io/selenium-py-peldatar/21//#testresult/a2d237e0fe2df71d",
       "status" : "passed",
       "time" : {
-        "start" : 1624804942801,
-        "stop" : 1624804942801,
+        "start" : 1624819652205,
+        "stop" : 1624819652205,
         "duration" : 0
       }
     } ]
@@ -29,13 +29,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7ba3ce2067ee530b",
-      "reportUrl" : "https://gergo1001.github.io/selenium-py-peldatar/20//#testresult/7ba3ce2067ee530b",
+      "uid" : "f7174ea055ec1cd9",
+      "reportUrl" : "https://gergo1001.github.io/selenium-py-peldatar/21//#testresult/f7174ea055ec1cd9",
       "status" : "passed",
       "time" : {
-        "start" : 1624804942799,
-        "stop" : 1624804942800,
-        "duration" : 1
+        "start" : 1624819652204,
+        "stop" : 1624819652204,
+        "duration" : 0
       }
     } ]
   },
@@ -49,13 +49,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7d0c96d593475b7c",
-      "reportUrl" : "https://gergo1001.github.io/selenium-py-peldatar/20//#testresult/7d0c96d593475b7c",
+      "uid" : "b22efc96517f2494",
+      "reportUrl" : "https://gergo1001.github.io/selenium-py-peldatar/21//#testresult/b22efc96517f2494",
       "status" : "passed",
       "time" : {
-        "start" : 1624804942797,
-        "stop" : 1624804942798,
-        "duration" : 1
+        "start" : 1624819652203,
+        "stop" : 1624819652203,
+        "duration" : 0
       }
     } ]
   },
@@ -69,12 +69,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9d3bb6ab7e146d2d",
-      "reportUrl" : "https://gergo1001.github.io/selenium-py-peldatar/20//#testresult/9d3bb6ab7e146d2d",
+      "uid" : "b544bfafa7c0d5d5",
+      "reportUrl" : "https://gergo1001.github.io/selenium-py-peldatar/21//#testresult/b544bfafa7c0d5d5",
       "status" : "passed",
       "time" : {
-        "start" : 1624804942783,
-        "stop" : 1624804942783,
+        "start" : 1624819652200,
+        "stop" : 1624819652200,
         "duration" : 0
       }
     } ]
