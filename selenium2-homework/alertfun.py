@@ -39,6 +39,7 @@ alert = driver.switch_to.alert
 send_text = "123456"
 alert.send_keys(send_text)
 alert.dismiss()
+time.sleep(3)
 assert (driver.find_element_by_id("demo").text, text_now)
 button.click()
 alert = driver.switch_to.alert
@@ -46,3 +47,5 @@ send_text = "123456"
 alert.send_keys(send_text)
 alert.accept()
 assert (driver.find_element_by_id("demo").text, f"You entered: {send_text}")
+time.sleep(3)
+driver.close()
