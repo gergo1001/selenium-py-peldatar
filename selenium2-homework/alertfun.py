@@ -16,8 +16,6 @@ alert = driver.switch_to.alert
 time.sleep(3)
 alert.accept()
 
-
-
 button = driver.find_element_by_name("confirmation")
 button.click()
 alert = driver.switch_to.alert
@@ -28,21 +26,23 @@ button.click()
 time.sleep(3)
 alert.dismiss()
 
-button=driver.find_element_by_id("double-click")
+button = driver.find_element_by_id("double-click")
 action = ActionChains(driver)
 action.double_click(button).perform()
+alert = driver.switch_to.alert
+alert.accept()
 
-text_now=driver.find_element_by_id("demo").text
-button=driver.find_element_by_name("prompt")
+text_now = driver.find_element_by_id("demo").text
+button = driver.find_element_by_name("prompt")
 button.click()
-alert=driver.switch_to.alert
-send_text="123456"
+alert = driver.switch_to.alert
+send_text = "123456"
 alert.send_keys(send_text)
 alert.dismiss()
-assert (driver.find_element_by_id("demo").text,text_now)
-alert=driver.switch_to.alert
-send_text="123456"
+assert (driver.find_element_by_id("demo").text, text_now)
+button.click()
+alert = driver.switch_to.alert
+send_text = "123456"
 alert.send_keys(send_text)
 alert.accept()
-assert (driver.find_element_by_id("demo").text,f"You entered: {send_text}")
-
+assert (driver.find_element_by_id("demo").text, f"You entered: {send_text}")
