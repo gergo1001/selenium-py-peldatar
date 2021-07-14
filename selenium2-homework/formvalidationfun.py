@@ -32,20 +32,24 @@ ids = ["test-email", "test-password", "test-confirm-password", "test-customer-nu
        "test-dealer-number", "test-random-field", "test-date-field", "test-url-field",
        "test-random-textarea", "test-card-type", "test-card-number", "test-card-cvv",
        "test-card-month", "test-card-year", "test-single-checkbox", "test-save-email-yes",
-       "test-terms-service", "test-terms-service-more", "test-button"]
+       "test-terms-service", "test-terms-service-more"]  # ez mar nem kell ide
 
 errs = [("Please enter an e-mail", 'Please check your E-Mail format', 'Login does not exist'),
         ("This field can't be empty", 'Should be between 6 and 20 characters'),
         ('Please complete Desired Password', 'Does not match Desired Password'),
-        ('This field can\'t be empty', 'Should be a number'),
-        ('This field can\'t be empty', 'Should be a 4 character number'),
-        ('Should contain "twelve"',), ('This field can\'t be empty', 'Must match pattern YYYY-MM-DD'),
-        ('Please enter a valid URL (starts with "http" or "https")',), ('This field can\'t be empty',),
+        ("This field can't be empty", 'Should be a number'),
+        ("This field can't be empty", 'Should be a 4 character number'),
+        ('Should contain "twelve"',), ("This field can't be empty", 'Must match pattern YYYY-MM-DD'),
+        ('Please enter a valid URL (starts with "http" or "https")',), ("This field can't be empty",),
         ('Please select a card type',),
         ('Please enter a credit card number (no spaces)', 'Please check your credit card nubmer'),
-        ('This field can\'t be empty', 'Should be a number between 3 and 4 characters'),
-        ('Select a month',), ('Select a year',), ('This field can\'t be empty',),
+        ("This field can't be empty", 'Should be a number between 3 and 4 characters'),
+        ('Select a month',), ('Select a year',), ("This field can't be empty",),
         ('Please select one',), ('Please agree to both to continue',)]
+
+Dictonary1 = {"test-email": ("Please enter an e-mail", 'Please check your E-Mail format', 'Login does not exist'),
+              "test-password": ("This field can't be empty", 'Should be between 6 and 20 characters')
+              }
 
 
 def get_element_error_msg(element, inp):
@@ -60,19 +64,31 @@ def get_element_error_msg(element, inp):
         out = None
     return out
 
-
-# Tesztelés üres mezőkkel
-for x in errs:
-    for i in ids:
+    # Tesztelés üres mezőkkel
 
 
-        e = get_element_error_msg(i, '\t')
-        if e is not None:
-            print(e)
-            assert e in x
-            print(f'id={i} mező tesztelve, a(z) >>{e}<< üzenet megjelent! ')
+# for count,i in enumerate(ids):
+#     e = get_element_error_msg(i, '\t')
+#     if e is not None:
+#
+#         # assert e in x
+#         if e in errs[count]:
+#             print(f'id={i} mező tesztelve, a(z) >>{e}<< üzenet megjelent! ')
+#         else:
+#             print(e)
+#     else:
+#         print(f'id={i} mező tesztelve, nincs hibaüzenet!')
+
+for elem in Dictonary1:
+    e = get_element_error_msg(elem, '\t')
+    if e is not None:
+
+        # assert e in x
+        if e in Dictonary1[elem]:
+            print(f'id={elem} mező tesztelve, a(z) >>{e}<< üzenet megjelent! ')
         else:
-            print(f'id={i} mező tesztelve, nincs hibaüzenet!')
-
+            print(e)
+    else:
+        print(f'id={elem} mező tesztelve, nincs hibaüzenet!')
 
 driver.quit()
