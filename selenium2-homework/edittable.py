@@ -55,7 +55,7 @@ def check_search(serch_text):
         cells = row.find_elements_by_tag_name("td")
         print(len(cells), type(cells), type(cells[0]))
 
-        print(cells[0)
+        print(cells[0].text)
         # print(ertek)
         # a program igy kiakad, mert neki más a Ipod vagy az ipod, de szerintem ez igy rossz, ezért ellenőrzök így
 
