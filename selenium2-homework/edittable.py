@@ -18,7 +18,7 @@ search_input = driver.find_element_by_xpath("//input")
 # Adj hozzá még két teljsen kitöltött sort. Ellenőrizd, hogy tényleg hozzáadódtak-e a sorok.
 
 def fill_cell(cell, value):
-    assert (cell.get_property("value") == None) # ez nem jó, mindig none..nem tudom miért nem jó
+    assert (cell.get_property("value") == None)  # ez nem jó, mindig none..nem tudom miért nem jó
     # azt azért megnézem, hogy value ne legyen az új értéknél
     cell.find_element_by_tag_name("input").clear()
     cell.find_element_by_tag_name("input").send_keys(value)
@@ -38,7 +38,7 @@ def add_row(name, price, quantity, category):
     fill_cell(cells[3], category)
 
 
-# a) Addj hozzá még két teljsen kitöltött sort. Ellenőrizd, hogy tényleg hozzáadódtak-e a sorok.
+# a) Adj hozzá még két teljsen kitöltött sort. Ellenőrizd, hogy tényleg hozzáadódtak-e a sorok.
 add_row('tePt', 12, 36, 'elem')
 add_row('masik termek', 16, 46, 'elem')
 
@@ -48,8 +48,15 @@ def check_search(serch_text):
     voltrossz = False
     good_row = 0
     table_rows = driver.find_elements_by_xpath("//table/tbody/tr")
+    print(len(table_rows))
     for row in table_rows:
         ertek = row.find_element_by_name('name').get_attribute('value')
+
+        cells = row.find_elements_by_tag_name("td")
+        print(len(cells), type(cells), type(cells[0]))
+
+        print(cells[0)
+        # print(ertek)
         # a program igy kiakad, mert neki más a Ipod vagy az ipod, de szerintem ez igy rossz, ezért ellenőrzök így
 
         if search_text.lower() in ertek.lower():
@@ -69,6 +76,6 @@ act_row = len(driver.find_elements_by_xpath("//table/tbody/tr"))
 assert (good_row == act_row)  # pont annyi sor van, ahanynak kellene lenni
 assert (voltrossz == False)  # csak jó sor van
 
-#c) írd át a táblázat egyes celláit és ellenőrizd, hogy megfelelően frissült-e a DOM struktúra.
-#nem frissül, gondolom ennek köze van, hogy miért nem megy a másik fajta elérés, ha arra kapok választ, akkor vizsgálom ezt
-#driver.close()
+# c) írd át a táblázat egyes celláit és ellenőrizd, hogy megfelelően frissült-e a DOM struktúra.
+# nem frissül, gondolom ennek köze van, hogy miért nem megy a másik fajta elérés, ha arra kapok választ, akkor vizsgálom ezt
+# driver.close()
