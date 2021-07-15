@@ -52,10 +52,11 @@ def check_search(serch_text):
     for row in table_rows:
         ertek = row.find_element_by_name('name').get_attribute('value')
 
-        cells = row.find_elements_by_tag_name("td")
-        print(len(cells), type(cells), type(cells[0]))
+        # cells = row.find_elements_by_tag_name("td")
+        # ertek=cells[0].find_element_by_tag_name("input").get_attribute('value')
 
-        print(cells[0].text)
+
+        #print(cells[0].text)
         # print(ertek)
         # a program igy kiakad, mert neki más a Ipod vagy az ipod, de szerintem ez igy rossz, ezért ellenőrzök így
 
